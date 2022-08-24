@@ -6,13 +6,9 @@ const multiplicador = (x:number , y:number):number =>{
         result += Math.abs(x);
     };
 
-    if(Math.sign(x) === Math.sign(y)){
-        return result
-    }  
-    else{
-        return -result
-    }
+    return (Math.sign(x) === Math.sign(y)) ? result : -result
+
 };
-console.log("result:::", multiplicador(3,0));
+console.log("result:::", multiplicador(3,10));
 
 
